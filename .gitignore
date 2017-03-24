@@ -240,3 +240,11 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+#the csproj file seemed messed up.  I think I may have accidentally
+# dragged the scripts folder under the models folder at one point.
+# apparently this created includes for ...models\scripts... in csproj.
+# I had found and fixed the problem, and local builds were not impacted.
+# However, my first azure deployment failed, looking for a file in models\scripts 
+# so I removed those lines, and called the original csproj MVC1.csproj.ignore
+*.ignore
