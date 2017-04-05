@@ -12,7 +12,7 @@ namespace MVC1.Controllers
 {
     public class RestaurantsController : Controller
     {
-        private OdeToFoodDBC db = new OdeToFoodDBC();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Restaurants
         public ActionResult Index()

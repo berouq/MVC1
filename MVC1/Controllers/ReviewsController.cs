@@ -11,7 +11,7 @@ namespace MVC1.Controllers
     public class ReviewsController : Controller
     {
 
-        OdeToFoodDBC _dbc = new OdeToFoodDBC();
+        ApplicationDbContext _dbc = new ApplicationDbContext();
 
 
         // GET: Reviews
