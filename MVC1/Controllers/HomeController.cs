@@ -10,7 +10,7 @@ namespace MVC1.Controllers
 {
     public class HomeController : Controller
     {
-        OdeToFoodDBC _dbc = new OdeToFoodDBC();
+        ApplicationDbContext _dbc = new ApplicationDbContext();
 
         public ActionResult QuickSearch(string term)
         {

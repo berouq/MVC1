@@ -7,15 +7,15 @@ namespace MVC1.Migrations
     using MVC1.Models;
     using System.Collections.Generic;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<MVC1.Models.OdeToFoodDBC>
+    internal sealed class Configuration : DbMigrationsConfiguration<MVC1.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "MVC1.Models.OdeToFoodDBC";
+            ContextKey = "MVC1.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(OdeToFoodDBC context)
+        protected override void Seed(ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

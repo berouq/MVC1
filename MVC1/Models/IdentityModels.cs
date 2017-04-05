@@ -25,6 +25,13 @@ namespace MVC1.Models
         {
         }
 
+        public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<ResaurantReview> Reviews { get; set; }
+
+
+
+
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

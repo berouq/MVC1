@@ -195,7 +195,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\OdeToFoodDBC.cs" />
     <Compile Include="Models\ResaurantReview.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestaurantListViewModel.cs" />
